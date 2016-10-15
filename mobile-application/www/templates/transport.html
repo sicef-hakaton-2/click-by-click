@@ -1,0 +1,26 @@
+<ion-view>
+  <ion-content class="scroll-content ionic-scroll">
+     <ion-list class="listaPrevoza">
+      <img class="stanica" src="img/stanicaa.png">
+      <ion-item ng-repeat="transport in transports track by $index" class="item">
+        <div>
+        	<div class="textPrevoz">
+            <b><p> Number of passengers: </p></b>
+        		<p>{{transport.broj_putnika}}</p>
+            <b><p> Name of end destinations </p></b>
+        		<p>{{transport.ime_odredisnog_gp}}</p>
+            <b><p> Name of start destinations </p></b>
+        		<p>{{transport.ime_polaznog_gp}}</p>
+            <b><p> Destination address</p></b>
+        		<p>{{transport.odredisna_adresa}}</p>
+            <b><p> Start adress </p></b>
+        		<p>{{transport.polazna_adresa}}</p>
+            <b><p> The remaining number of passengers </p></b>
+            <p>{{transport.preostali_broj_putnika}}</p>
+            <b><p> Departure time </p></b>
+            <p>{{transport.vreme_polaska}}</p>
+        	</div>
+        </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic/js/ionic-angular.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+
+  <body ng-app="starter" class="platform-android platform-cordova platform-webview">
+    <ion-side-menus ng-controller="SideBarController">
+      <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7" align-title="center">
+         <ion-nav-title>
+          <img class="iconHeader" src="img/icon.png">
+         </ion-nav-title>
+         <ion-nav-back-button class="button-icon ion-ios-arrow-left"></ion-nav-back-button>
+         <ion-nav-buttons side="left">
+         <button id="leftBtn" class="button button-clear icon ion-navicon-round" menu-toggle="left" ng-click="toggleLeft()"></button>
+         </ion-nav-buttons>
+       </ion-nav-bar>
+       <ion-nav-view></ion-nav-view>
+      </ion-side-menu-content>
+      <ion-side-menu class="sideMenu" side="left" enable-menu-with-back-views="false" >
+        <ion-list>
+          <img class="sideBarLogo"src="img/iconnn.png">
+          <a href="#/exchange-rate" class="item"><img class="burger-icon" src="img/kursnaLista.png"> Exchange rate</a>
+          <a href="#/embassy" class="item"><img class="burger-icon" src="img/ambasada.png"> Embassy</a>
+          <a href="#/important-phone-numbers" class="item"><img class="burger-icon" src="img/vazniBrojevi.png"> Important phone numbers</a>
+          <a href="#/useful-links" class="item"><img class="burger-icon" src="img/korisniLinkovi.png"> Useful links</a>
+        </ion-list>
+      </ion-side-menu>
+    </ion-side-menus>
+  </body>
+</html>

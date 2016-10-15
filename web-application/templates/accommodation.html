@@ -1,0 +1,27 @@
+
+<div class="col-md-2"></div>
+<div class="col-md-10">
+ <table style="margin-top: 50px;" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Adresa</th>
+            <th>Opis</th>
+            <th>Telefon</th>
+            <th><button class="btn btn-primary" ng-click="goTo()">Dodaj smestaj</button></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="smestaj in smestaji">
+            <td class="text-danger" >{{smestaj.naziv}}</td>
+            <td>{{smestaj.adresa}}</td>
+            <td>{{smestaj.opis}}</td>
+            <td>{{smestaj.telefon}}</td>
+            <td>
+                <button class="btn btn-md btn-danger btn-block" ng-click="delete(smestaj.objectId)">Obriši</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+</div>

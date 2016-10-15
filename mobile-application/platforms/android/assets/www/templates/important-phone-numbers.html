@@ -1,0 +1,14 @@
+<ion-view>
+  <ion-content class="scroll-content ionic-scroll">
+    <ion-list class="listaVazniBrojevi">
+     	<ion-item style="padding-right: 0px;" ng-repeat="number in numbers track by $index" class="item" href="tel:{{number.telefon}}">
+        <div class="phoneNumbers">
+          <img ng-src="{{number.slika.url}}">
+          <p><b>{{number.telefon}}</b></p>
+          <p>{{number.naziv}}</p>
+          <button class="button button-balanced button-clear ion-ios-telephone"></button>
+        </div>
+      </ion-item>
+     </ion-list>
+  </ion-content>
+</ion-view>

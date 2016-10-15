@@ -1,0 +1,26 @@
+<div class="col-md-2"></div>
+<div class="col-md-10 center-block">
+ <table style="margin-top: 50px;" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Adresa</th>
+            <th>Opis</th>
+            <th>Telefon</th>
+            <th><button class="btn btn-primary" ng-click="goTo()">Dodaj lokaciju</button></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="hm in humanitarnePomoci">
+            <td class="text-danger">{{hm.naziv}}</td>
+            <td>{{hm.adresa}}</td>
+            <td>{{hm.opis}}</td>
+            <td>{{hm.telefon}}</td>
+            <td>
+                <button class="btn btn-md btn-danger btn-block" ng-click="delete(hm.objectId)">Obriši</button>
+            </td>
+        </tr>
+        <tr>
+    </tbody>
+</table>
+</div>

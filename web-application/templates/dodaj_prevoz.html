@@ -1,0 +1,67 @@
+<div class="row">
+<div class="col-md-8 pull-right">
+
+<h3 style="margin-left: 210px;">Dodaj prevoz</h3>
+
+
+<!--begin HTML Form-->
+<form class="form-horizontal" role="form" method="post" action=" ">
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span> Adresa polaska:</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" id="name" name="name" ng-model="address" placeholder="Adresa polazka">
+</div>
+</div>
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span>Polazni granicni prelaz:</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" id="name" name="name" ng-model="startGR" placeholder="Polazni granicni prelaz:">
+</div>
+</div>
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span> Adresa dolaska:</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" id="name" name="name" ng-model="addressStart" placeholder="Adresa dolaska">
+</div>
+</div>
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span>Krajnji granicni prelaz</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" id="name" name="name"ng-model="endGR" placeholder="Krajnji granicni prelaz">
+</div>
+</div>
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span>Vreme polaska</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" id="name" name="name" ng-model="timeStart" placeholder="Vreme polaska">
+</div>
+</div>
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span>Preostali broj putnika</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" id="name" name="name" ng-model="passangersLeft" placeholder="Preostali broj putnika">
+</div>
+</div>
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span>Max broj putnika</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" id="name" name="name" ng-model="maxPassangers" placeholder="Max broj putnika">
+</div>
+</div>
+
+<div class="form-group">
+<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+	<button type="submit" id="submit" name="submit" ng-click="add($event)" class="btn-lg btn-success btn-block">DODAJ</button>
+
+</div>
+</div>
+<!--end Form--></form>
+<!--end col block--></div>
+</div>

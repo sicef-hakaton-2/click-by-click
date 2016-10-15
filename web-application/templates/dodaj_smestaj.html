@@ -1,0 +1,52 @@
+<div class="col-md-2"></div>
+<div class="col-md-8">
+
+<h3 style="margin-left: 210px; margin-top:60px;">Dodaj smestaj</h3>
+
+
+<!--begin HTML Form-->
+<form class="form-horizontal" role="form" method="post" action=" ">
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span> Adresa:</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" ng-model="address" placeholder="Adresa">
+</div>
+</div>
+
+<div class="form-group">
+<label for="name" class="col-sm-3 control-label"><span class="required">*</span> Naziv:</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" ng-model="name" placeholder="Naziv">
+</div>
+</div>
+
+<div class="form-group">
+<label for="message" class="col-sm-3 control-label"><span class="required">*</span> Opis:</label>
+<div class="col-sm-9">
+<textarea class="form-control" row="4" ng-model="description" placeholder="Opis"></textarea>
+</div>
+</div>
+
+<div class="form-group">
+<label for="email" class="col-sm-3 control-label"><span class="required">*</span> Telefon: </label>
+<div class="col-sm-9">
+<input type="phone" class="form-control" ng-model="phoneNumber" placeholder="Telefon">
+</div>
+</div>
+
+<div class="pull-right radio">
+  <label><input type="radio" name="optradio" ng-model="radioButton" value="lyHHQk5GsF">Prihvatilište</label>
+  <label><input type="radio" name="optradio" ng-model="radioButton" value="VkwqWVjBvH">Privatni smeštaj</label>
+</div>
+
+
+<div class="form-group">
+<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+<button type="submit" id="submit" name="submit" ng-click="add()" class="btn-lg btn-success btn-block">DODAJ</button>
+
+</div>
+</div>
+<!--end Form--></form>
+<!--end col block--></div>
+<div class="col-md-2"></div>

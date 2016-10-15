@@ -1,0 +1,25 @@
+<div class="col-md-10 pull-right">
+ <table style="margin-top: 50px;" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Adresa</th>
+            <th>Opis</th>
+            <th>Telefon</th>
+
+             <th><button class="btn btn-primary" ng-click="goTo()">Dodaj posao</button></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="posao in poslovi">
+            <td class="text-danger">{{posao.naziv}}</td>
+            <td>{{posao.adresa}}</td>
+            <td>{{posao.opis}}</td>
+            <td>{{posao.telefon}}</td>
+            <td>
+                <button class="btn btn-md btn-danger btn-block" ng-click="delete(posao.objectId)">Obriši</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

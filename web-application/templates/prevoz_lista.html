@@ -1,0 +1,33 @@
+
+<div class="col-md-2"></div>
+<div class="col-md-10 center-block">
+ <table style="margin-top: 50px;" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Adresa polaska</th>
+            <th>Granicni prelaz - Start</th>
+            <th>Adresa dolaska</th>
+            <th>Granicni prelaz - End</th>
+            <th>Vreme polaska</th>
+            <th>Max broj putnika</th>
+            <th>Preostali broj putnika</th>
+            <th><button class="btn btn-primary" ng-click="goTo()">Dodaj prevoz</button></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="prevoz in prevozi">
+            <td class="text-danger">{{prevoz.polazna_adresa}}</td>
+            <td>{{prevoz.ime_polaznog_gp}}</td>
+            <td>{{prevoz.odredisna_adresa}}</td>
+            <td>{{prevoz.ime_odredisnog_gp}}</td>
+            <td>{{prevoz.vreme_polaska}}</td>
+            <td>{{prevoz.broj_putnika}}</td>
+            <td>{{prevoz.preostali_broj_putnika}}</td>
+            <td>
+                <button class="btn btn-md btn-danger btn-block" ng-click="delete(prevoz.objectId)">Obriši</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+        
